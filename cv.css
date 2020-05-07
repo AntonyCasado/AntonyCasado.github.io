@@ -1,49 +1,57 @@
 body {
   margin: 0px 0px 0px 0px;
-  background-color: grey;
+  background-color: #212121;
 }
 
 .entire_page {
   display: flex;
   justify-content: center;
-  font-family: 'Yu Gothic';
+  font-family: "pt_sans_captionregular";
 }
 
+
 .side_bar {
-  background-color: #FF6F00;
+  background-color: #00838F;
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
 }
 
 .side_bar_cell {
   margin: 40px 40px 40px 40px;
 }
 
+.side_bar_icones{
+  margin-top: auto;
+}
+
 figure {
   text-align: center;
-  margin: 60px 0px 30px 0px;
+  margin: 60px 0px 50px 0px;
 }
 
 .profile_picture {
   border-radius: 50%;
   max-width: 230px;
-  border: solid #E64A19 4px;
+  border: solid #006064 4px;
 }
 
 .side_bar_icons {
   display: flex;
   justify-content: space-around;
+  color: #212121;
 }
 
 .side_bar_titles {
   text-align: center;
-  background-color: black;
+  background-color: #212121;
   font-size: 26px;
-  color: white;
+  color: #00838F;
   margin: 0 0 0 0;
 }
+
+
 
 .main {
   background-color: white;
@@ -54,8 +62,7 @@ figure {
 }
 
 header {
-  padding-top: 75px;
-  margin: 0px 0px 50px 70px;
+  margin: 90px 0px 100px 70px;
 }
 
 .name {
@@ -65,7 +72,7 @@ header {
 }
 
 .first_name {
-  color: #FF6F00;
+  color: #00838F;
 }
 
 .name_comment {
@@ -75,56 +82,95 @@ header {
 }
 
 .name_comment_underline {
-  border-bottom: solid #FF6F00 2px;
+  border-bottom: solid #00838F 2px;
 }
 
 .main_cell {
-  margin: 0px 70px 0px 70px;
+  margin: 0px 70px 20px 70px;
 }
 
 .main_titles {
-  border-bottom: solid #FF6F00 2px;
+  border-bottom: solid #00838F 2px;
+  font-size: 26px;
 }
 
 .main_cell_bloc {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .main_date {
-  max-width: 350px;
-  padding-top: 10px;
+  min-width: 116px;
+  display: flex;
+  margin: 16px 0px 0px 0px;
+
 }
 
 .main_icons {
-  color: #FF6F00;
+  color: #00838F;
   padding-right: 30px;
 }
 
 .main_description {
-  max-width: 450px;
-  margin-left: 60px;
+  margin: 10px 0px 16px 60px ;
 }
 
 .main_date_dot {
-  margin-top: 15px;
-  margin-right: 20px;
-  height: 40px;
-  float: left;
-  color: #FF6F00;
+
+  color: #00838F;
+  margin: 0px 15px 0px 0px;
 }
 
 .style_bold {
   font-weight: bold;
 }
 
+p {
+  margin: 5px 0px 5px 0px;
+}
+a{
+  color:#212121;
+}
+
+@font-face {
+    font-family: 'pt_sans_captionregular';
+    src: url('fonts/PTC55F-webfont.eot');
+    src: url('fonts/PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTC55F-webfont.woff2') format('woff2'),
+         url('fonts/PTC55F-webfont.woff') format('woff'),
+         url('fonts/PTC55F-webfont.ttf') format('truetype'),
+         url('fonts/PTC55F-webfont.svg#pt_sans_captionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width:720px) {
+
   .entire_page {
     flex-direction: column;
   }
-
   .side_bar {
     max-width: none;
     width: auto;
   }
+  .main_cell{
+    margin: 0px 15px 0px 15px;
+  }
+  .main_cell_bloc{
+    flex-direction: column-reverse;
+    margin: 0px 0px 15px 0px;
+  }
+  .main_description{
+    margin: 0px 0px 0px 0px;
+  }
+
+  .main_date{margin: 0px 0px 18px 0px;}
 }
