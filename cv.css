@@ -130,6 +130,9 @@ p {
 }
 a{
   color:#212121;
+  display: block;
+  margin: 0px 0px 20px 0px;
+
 }
 
 @font-face {
