@@ -51,6 +51,13 @@ figure {
   margin: 0 0 0 0;
 }
 
+.link{
+  color:#212121;
+  display: block;
+  margin: 0px 0px 20px 0px;
+
+}
+
 
 
 .main {
@@ -87,6 +94,10 @@ header {
 
 .main_cell {
   margin: 0px 70px 20px 70px;
+}
+
+.main_bloc_titles{
+  margin: 3px 0px 0px 0px;
 }
 
 .main_titles {
@@ -128,12 +139,7 @@ header {
 p {
   margin: 5px 0px 5px 0px;
 }
-a{
-  color:#212121;
-  display: block;
-  margin: 0px 0px 20px 0px;
 
-}
 
 @font-face {
     font-family: 'pt_sans_captionregular';
@@ -145,7 +151,6 @@ a{
          url('fonts/PTC55F-webfont.svg#pt_sans_captionregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
